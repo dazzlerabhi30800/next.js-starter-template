@@ -14,3 +14,62 @@ button {
     font-size: 1.3rem;
     cursor: pointer;
 }
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #374669;
+    color: #fff;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+    color: #fff;
+}
+
+
+header a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -5px;
+    background: cyan;
+    height: 2px;
+    width: 100%;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: 0.4s linear;
+}
+
+/* header a:hover::after {
+    transform: scale(1);
+} */
+
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    padding: 1rem;
+    min-height: calc(100vh - 70.8px);
+    background: rgb(37, 44, 62);
+    color: #fff;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}

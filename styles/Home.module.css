@@ -1,10 +1,17 @@
-.main {
+.buttonContainer {
   display: flex;
-  justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
   align-items: center;
-  padding: 1rem;
-  min-height: 100vh;
-  background: rgb(37, 44, 62);
-  color: #fff;
+}
+
+.logo {
+  font-size: 2rem;
+  background: linear-gradient(45deg, rgb(74, 246, 149), rgb(190, 242, 47));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.active::after {
+  transform: scale(1);
 }
